@@ -1,0 +1,11 @@
+name: ad32
+kind: app
+apiVersion: v0.0
+hostname: ad32.concept41.com
+metadata:
+  resource:
+    version: v0.0
+    description: a proof of concept for adding an ad to a website
+  visibility: public
+  concept:
+    number: 32
