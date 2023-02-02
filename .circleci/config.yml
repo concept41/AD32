@@ -9,8 +9,8 @@ orbs:
 jobs:
   setup_workspace:
     <<: *defaults
-    # docker:
-    #   - image: cimg/base:2021.02
+    docker:
+      - image: cimg/base:2021.02
     steps:
       - checkout
       - persist_to_workspace:
