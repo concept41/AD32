@@ -30,6 +30,8 @@ jobs:
   unit_test:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/
       - run:
           command: yarn test
           name: run unit tests
