@@ -41,6 +41,8 @@ jobs:
   build_to_s3:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/
       - run: yarn run build
       - aws-s3/copy:
           from: dist/
