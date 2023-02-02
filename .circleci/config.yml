@@ -30,8 +30,9 @@ jobs:
   unit_test:
     <<: *defaults
     steps:
-      - node/test:
-          version: "16.17"
+      - run:
+          command: yarn test
+          name: run unit tests
 workflows:
   test:
     jobs:
