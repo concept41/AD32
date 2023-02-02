@@ -45,7 +45,7 @@ jobs:
           at: ~/
       - run: yarn run build
       - aws-s3/copy:
-          from: dist/
+          from: build/
           to: s3://ad32.concept41.com
           arguments: --recursive
 workflows:
