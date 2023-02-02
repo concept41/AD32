@@ -9,3 +9,6 @@ metadata:
   visibility: public
   concept:
     number: 32
+spec:
+  repository:
+    httpGet: https://github.com/concept41/ad32
